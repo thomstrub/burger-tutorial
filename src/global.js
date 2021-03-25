@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const createGlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 html, body {
     margin: 0;
     padding: 0;
@@ -10,8 +10,8 @@ html, body {
 }
 body {
     align-items: center;
-    background: #0d0C1D;
-    color: #EFFFFA;
+    background: ${({ theme }) => theme.primaryDark};
+    color: ${({ theme }) => theme.primaryLight};
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     height: 100vh;
